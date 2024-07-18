@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/css style.css">
 </head>
 <body>
     <div class="container">
         <h1>Kalkulator BMI</h1>
         <form id="bmiForm">
             <label for="gender">Jenis Kelamin:</label>
-            <select id="gender" name="gender">
-                <option value="male">Laki-Laki</option>
-                <option value="female">Wanita</option>
-            </select>
+            <label>
+                <input type="radio" name="gender" value="man" required> Laki-laki
+            </label>
+            <label>
+                <input type="radio" name="gender" value="woman" required> Perempuan
+            </label>
+
+            <label for="age">Usia:</label>
+            <input type="number" id="age" name="age" required>
 
             <label for="height">Tinggi Badan (cm):</label>
             <input type="number" id="height" name="height" required>
@@ -30,6 +35,6 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="./Javascript/script.js"></script>
 </body>
 </html>
